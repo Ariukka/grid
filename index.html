@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/style_box.css" />
+        <title>CSS Grid</title>
+        <style>
+            .container {
+                display: grid;
+            grid-template-areas:
+            "header header header" "content content sidebar1" "card-1 card-2 card-3" "footer footer footer";
+            grid-gap: 1rem;
+            }
+            .header{
+                grid-area: header;
+            }
+            .content{
+                grid-area: content;
+            }
+            .sidebar{
+                grid-area: sidebar1;
+            }
+            .card-1{
+                grid-area: card-1;
+            }
+            .card-2{
+                grid-area: card-2;
+            }
+            .card-2{
+                grid-area: card-2;
+            }
+            .fooder{
+                grid-area: fooder;
+                text-align: center;
+            }
+            @media(max-width: 500px){
+                .container {
+                    grid-template-areas:
+                    "header" "content " " sidebar" "card-1" "card-2" "card-3" "footer";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<div class="header item">
+    <h1>Тоглоомын веб сайт</h1>
+    </div>
+    <div class="content item">
+<h1>Сайн байна уу?</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Harum enim
+        labore culpa saepe voluptatibus nihil excepturi
+        perferendis voluptatem
+        quidem dicta!
+    </p>
+</div>
+        <div class="sidebar item">
+            <h2>Туслах цэс</h2>
+            <ul>
+                <li>Бүртгүүлэх</li>
+                <li>Тоглолт үзэх</li>
+                <li>Хуваарь харах</li>
+                <li>Гишүүн болох</li>
+            </ul>
+        </div>
+        <div class="card-1 item">
+            <h2>Гарчиг</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti
+                accusantium repudiandae totam perferendis necessitatibus
+                dolor in
+                consectetur ab unde nobis.
+            </p>
+        </div>
+        <div class="card-2 item">
+            <h2>Гарчиг</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Corrupti
+    accusantium repudiandae totam perferendis necessitatibus
+    dolor in
+    consectetur ab unde nobis.
+</p>
+        </div>
+        <div class="card-3 item">
+            <h2>Гарчиг</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti
+                accusantium repudiandae totam perferendis necessitatibus
+                dolor in
+                consectetur ab unde nobis.
+            </p>
+        </div>
+        <div class="footer item">
+            <p>Зохиогчийн эрх хуулиар хамгаалагдсан. 2024</p>
+        </div>
+        </div>
+    </body>
+</html>

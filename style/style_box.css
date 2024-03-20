@@ -1,0 +1,34 @@
+:root {
+    --clr-dark: #094deb;
+    --clr-light: #ffffff;
+    --clr-accent: #890fcfce;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+}
+
+.container {
+    width:90%;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+}
+
+.item {
+    padding: 0.5em;
+    background-color: #52a2eeb4;
+    font-weight: 1000;
+    color: var(--clr-light);
+    border: 10px solid var(--clr-accent);
+}
